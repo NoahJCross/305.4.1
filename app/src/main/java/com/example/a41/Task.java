@@ -1,9 +1,6 @@
 package com.example.a41;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
+// Task class representing a task with title, description, and due date
 public class Task {
 
     private long id;
@@ -11,18 +8,22 @@ public class Task {
     private String description;
     private String dueDate;
 
-    public Task(){
-
+    // Default constructor
+    public Task() {
     }
-    public Task(String title, String description, String dueDate){
+
+    // Constructor with parameters to initialize a task
+    public Task(String title, String description, String dueDate) {
         this.title = title;
         this.description = description;
         this.dueDate = dueDate;
     }
 
+    // Getter and setter methods for the task attributes
 
-    // Getters and setters
-    public long getId() { return id; }
+    public long getId() {
+        return id;
+    }
 
     public void setId(long id) {
         this.id = id;
